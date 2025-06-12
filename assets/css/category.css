@@ -1,0 +1,22 @@
+.post-112 header {
+    margin-top: -70px !important;
+}
+
+.post-112 header p {
+    text-align: center;
+}
+
+.pagination {
+    margin-top: 10px;
+}
+
+.pagination-link {
+    margin-right: 5px;
+    text-decoration: none;
+    color: #333;
+}
+
+.pagination-link.active {
+    font-weight: bold;
+    color: #0073aa;
+}

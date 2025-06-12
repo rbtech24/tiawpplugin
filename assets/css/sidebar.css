@@ -1,0 +1,128 @@
+/* Custom Sidebar Styles */
+.sidebar {
+    width: 300px; /* Set the width of the sidebar */
+    padding: 15px;
+    background-color: #f9f9f9; /* Light grey background */
+    border: 1px solid #ddd; /* Add a border to create the box look */
+    border-radius: 5px; /* Optional: adds rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+    margin-left: 30px; /* Align it to the right */
+    float: left; /* Float the sidebar to the right */
+}
+
+.sidebar .widget {
+    margin-bottom: 20px;
+}
+
+.sidebar .widget-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    text-transform: uppercase;
+    border-bottom: 2px solid #e5e5e5;
+    padding-bottom: 5px;
+}
+
+.sidebar .widget-content {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Clear float after the sidebar */
+.content-area::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* General Styles */
+ 
+    .widget {
+        margin-bottom: 20px;
+    }
+
+    .widget-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 15px;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #007bff;
+    }
+
+    /* Category List Styles */
+    .business-category-list {
+        list-style-type: none;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .business-category-list li {
+        margin-bottom: 10px;
+    }
+
+    .business-category-list a {
+        text-decoration: none;
+        color: #007bff;
+        font-size: 1rem;
+        transition: color 0.3s ease, transform 0.3s ease;
+        display: block;
+        padding: 10px;
+        background-color: #f1f3f5;
+        border-radius: 5px;
+    }
+
+    .business-category-list a:hover {
+        color: #0056b3;
+        background-color: #e9ecef;
+        transform: translateX(5px);
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 600px) {
+        .sidebar {
+            padding: 15px;
+        }
+
+        .widget-title {
+            font-size: 1.25rem;
+        }
+
+        .business-category-list a {
+            font-size: 0.9rem;
+            padding: 8px;
+        }
+    }
+    
+    .pagination {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between pagination items */
+}
+
+.pagination-link {
+    width: 18%; /* Each link takes 18% to fit 5 in one row (with some space for gaps) */
+    text-align: center;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.pagination-link.active {
+    background-color: #333;
+    color: #fff;
+}
+
+.pagination-link:hover {
+    background-color: #ddd;
+}
+#category-search-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
